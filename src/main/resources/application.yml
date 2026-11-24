@@ -1,0 +1,14 @@
+server:
+  address: 127.0.0.1
+  port: 8080
+spring:
+  redis:
+    host: ${EXAMPLE_REDIS_HOST:localhost}
+    port: ${EXAMPLE_REDIS_PORT:6379}
+example:
+  token-url: ${EXAMPLE_TOKEN_URL:http://localhost:8080/sample/token}
+  api-url: ${EXAMPLE_API_URL:http://localhost:8080/sample/echo}
+  client-id: ${EXAMPLE_CLIENT_ID:sample-client}
+  client-secret: ${EXAMPLE_CLIENT_SECRET:sample-secret}
+  cache-key: ${EXAMPLE_CACHE_KEY:example:access-token}
+  token-ttl-seconds: ${EXAMPLE_TOKEN_TTL_SECONDS:60}
